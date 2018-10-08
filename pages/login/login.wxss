@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+
+.login_container {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* .layout-input {
+  border-bottom:1rpx solid #000;
+} */
+
+.input_ban {
+  /* width:720rpx; */
+  border-bottom: 1px solid #000;
+  margin: 0 80rpx;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sep_line {
+  height: 1rpx;
+  /* width:720rpx; */
+  background-color: #eee;
+  margin: 0 30rpx;
+}
+
+.login_input {
+  height: 80rpx;
+  /* line-height: 100rpx; */
+  font-size: 40rpx;
+  font-family: Arial !important;
+}
+
+.dis_relative {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hi-style {
+  font-size: 60rpx;
+  display: block;
+  margin: 80rpx 60rpx;
+}

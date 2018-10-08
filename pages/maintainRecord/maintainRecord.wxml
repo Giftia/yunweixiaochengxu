@@ -1,0 +1,13 @@
+<!--pages/maintainRecord/maintainRecord.wxml-->
+<view style='background: #F0F1F5'>
+  <view wx:for='{{list}}' wx:key='{{index}}' class='flex-column' style='background:#fff;margin-bottom:30rpx;padding:30rpx;'>
+    <view class='flex-between' style='margin-bottom:20rpx;'>
+      <view style='font-size:30rpx'>景区：{{item.name}}</view>
+      <text style='font-size:26rpx;color:#ADADAD'>{{item.time}}</text>
+    </view>
+    <view class='flex-between'>
+      <view style='font-size:30rpx'>车辆编号：{{item.code}}</view>
+      <text style='font-size:26rpx;color:#ADADAD'>{{item.type}}</text>
+    </view>
+  </view>
+</view>

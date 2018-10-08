@@ -1,0 +1,36 @@
+/* pages/myInfor/myInfor.wxss */
+
+.myInforStyle {
+  width: 330rpx;
+  height: 330rpx;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  color: white;
+}
+
+.myInforStyleone {
+  background: #2ec7a9;
+}
+
+.myInforStyletwo {
+  background: #70c4e0;
+}
+
+.iconimage {
+  width: 142rpx;
+  height: 142rpx;
+  margin-bottom: 30rpx;
+}
+.dioe{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  background: red;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 16rpx;
+  color: #fff;
+  position: absolute;
+  top:0;
+  right: 0
+}

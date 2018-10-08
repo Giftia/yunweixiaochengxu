@@ -1,0 +1,41 @@
+/* pages/carParts/carParts.wxss */
+@import "../common/lib/weui.wxss";
+
+.vuleStyle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.weui-cells1 {
+  position: relative;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 17px;
+}
+
+.carstyleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 10rpx;
+}
+
+.carsnum {
+  width: 100rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 4px;
+  border: 1px #ccc solid;
+  font-size: 14px;
+}
+
+.buttonBox {
+  display: -webkit-flex;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background: #fff;
+}

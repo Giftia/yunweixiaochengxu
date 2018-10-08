@@ -1,0 +1,10 @@
+<!--pages/myTask/myTask.wxml-->
+<view style='padding:30rpx;background:#F0F1F5;height:100vh'>
+  <navigator url='/pages/taskDetails/taskDetails' class='orderList flex-between' wx:for='{{oderList}}' wx:key='{{index}}'>
+    <text>{{item.text}}</text>
+    <view class='flex-between'>
+      <text style="color:BCBCBC">查看</text>
+      <image src='{{taskImageRight}}' class='iconimage'></image>
+    </view>
+  </navigator>
+</view>

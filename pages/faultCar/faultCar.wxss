@@ -1,0 +1,5 @@
+/* pages/faultCar/faultCar.wxss */
+.iconimage{
+  width: 51rpx;
+  height: 51rpx
+}

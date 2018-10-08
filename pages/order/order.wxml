@@ -1,0 +1,48 @@
+<!--pages/order/order.wxml-->
+<view style='padding:30rpx'>
+  <view class='arrows flex-between'>
+    <view>
+      <view class='namexin'>
+        <view class='namexinxi'>
+          <image src='../image/my-icon.png' style='  width: 40rpx; height: 40rpx;margin-right:16rpx'></image>
+          <view>收件人：张张啊</view>
+        </view>
+        <text>131211111111</text>
+      </view>
+      <view class='dingzhistyle'>
+        <view>
+          <image src='../image/ding-icon.png' style='  width: 40rpx; height: 40rpx;margin-right:16rpx'></image>
+        </view>
+        <view style='  font-size: 32rpx;color: #A2A2A2'>收货地址：
+          <text>杭州市西湖区什么县城杭州市西湖区什么县城</text>
+        </view>
+      </view>
+    </view>
+    <navigator url="/pages/address/address" class='arrowsbox'>
+      <image src='../image/arrow.png' style='width: 18rpx; height: 30rpx'></image>
+    </navigator>
+  </view>
+
+</view>
+<view style='width:100%;height:34rpx;background:#F0F1F5'></view>
+<view class='dingzhistyle ' style='display:flex;align-items:center;padding:30rpx'>
+  <view class='flex-center'>
+    <image src='../image/ucenter_icon_zhinan.png' style='width: 30rpx; height: 30rpx;margin-right:16rpx'></image>
+    <view style='font-size: 32rpx;color: #A2A2A2'>备注：</view>
+  </view>
+  <view style='font-size: 32rpx;color: #A2A2A2'>
+    <input placeholder='请输入备注内容' placeholder-style='font-size:30rpx;color: #A2A2A2' style='font-size: 32rpx'></input>
+  </view>
+</view>
+
+<view style='padding:30rpx'>
+  <view class='dingdan-style' wx:for='{{newarr}}' wx:key='{{id}}'>
+    <text style='font-size:32rpx'>{{item.name}}</text>
+    <view style='font-size:14px;color: #a2a2a2;'>x{{item.num}}</view>
+  </view>
+</view>
+
+
+<view class='buttonBox'>
+  <button style='background:#343E4A;color:#fff;width:85%' form-type='submit'>提交订单</button>
+</view>

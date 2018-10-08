@@ -1,0 +1,10 @@
+/* pages/lookingCar/lookingCar.wxss */
+@import '../common/lib/weui.wxss';
+.iconimage{
+  width: 51rpx;
+  height: 51rpx
+}
+.iconimage1{
+  width: 50rpx;
+  height: 50rpx
+}

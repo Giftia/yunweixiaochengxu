@@ -1,0 +1,13 @@
+<!--pages/carSudit/carSudit.wxml-->
+<view style='padding:30rpx;background:#F0F1F5;height:100vh'>
+  <navigator url='/pages/carDetails/carDetails' class='orderList flex-between' wx:for='{{oderList}}' wx:key='{{index}}'>
+    <view class='flex-column'>
+      <text>{{item.text}}</text>
+      <text style='font-size:30rpx;color:#BCBCBC;margin-top:20rpx'>{{item.textocde}}</text>
+    </view>
+    <view class='flex-between'>
+      <text style="color:{{item.isfahuo ? '#50CC99' : '#BCBCBC'}}">{{item.isfahuo ? '审核通过' : '未审核通过'}}</text>
+      <image src='{{item.isfahuo ?oderImageRight1 :oderImageRight}}' class='iconimage'></image>
+    </view>
+  </navigator>
+</view>

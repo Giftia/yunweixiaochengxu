@@ -1,0 +1,10 @@
+/* pages/siteDetails/siteDetails.wxss */
+
+.siteDetails {
+  border-bottom: 1px #b5b5b5 solid;
+  padding-top: 25rpx;
+  padding-bottom: 50rpx;
+  font-size: 16px;
+  color: #a1a1a1;
+  margin-bottom: 13px;
+}

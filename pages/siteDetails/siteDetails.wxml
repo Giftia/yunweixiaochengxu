@@ -1,0 +1,25 @@
+<!--pages/siteDetails/siteDetails.wxml-->
+<view style='padding:30rpx 0;background:#F0F1F5;height:100vh'>
+  <view class='flex-column' style='padding:30rpx;background:#FFF;'>
+    <view class='siteDetails flex-between'>
+      <view>建立时间</view>
+      <view>123</view>
+    </view>
+    <view class='siteDetails flex-between'>
+      <view>站点名称</view>
+      <view>123</view>
+    </view>
+    <view class='siteDetails flex-between'>
+      <view>站点坐标</view>
+      <view>123,121</view>
+    </view>
+    <view class='flex-between' style='font-size:32rpx;color:#A1A1A1;margin-bottom:26rpx'>
+      <view>蓝牙信标</view>
+      <view class='flex-column'>
+        <text>12111111</text>
+        <text>12111111</text>
+        <text>12111111</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<!--pages/carseek/carseek.wxml-->
+<map id='map' latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%; height: 100vh;" markers="{{markers}}" show-location scale='13' bindmarkertap='markertap'>
+</map>

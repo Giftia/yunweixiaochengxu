@@ -1,0 +1,41 @@
+/* pages/siteModify/siteModify.wxss */
+@import "../common/lib/weui.wxss";
+
+.iconimage {
+  width: 42rpx;
+  height: 42rpx;
+  margin-left: 10rpx;
+}
+
+.iconimage-sao {
+  width: 51rpx;
+  height: 51rpx;
+  margin-left: 10rpx;
+}
+
+.lanyanum {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+}
+
+.table {
+  width: 100%;
+  background: #fff;
+}
+
+.sitexinxi {
+  font-size: 30rpx;
+  color: #ababab;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 12rpx 0 #ababab;
+  border-radius: 10rpx;
+}
+
+.buttonBox {
+  display: -webkit-flex;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background: #fff;
+}

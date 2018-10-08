@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="login_container">
+  <view class='layout-input'>
+    <text class='hi-style'>Hi，你好！</text>
+    <view class="input_ban">
+      <input value="{{phoneNum}}" type="number" bindinput="bindKeyInput" maxlength="11" placeholder="请输入手机号码" class="login_input" placeholder-style="color:#ccc;font-family:microsoft yahei;font-weight:normal;font-size:16px" />
+      <icon type="clear" size="20" bindtap='clear' style="display:{{isShow ? 'block' : 'none'}}"></icon>
+    </view>
+  </view>
+
+  <button class="login_btn" bindtap="login" size="default" style="background:{{login_btn_background}};border-radius:40rpx;height:80rpx;line-height:80rpx;margin:100rpx 80rpx;width:590rpx;color:#fff;text-align: center">下一步</button>
+</view>

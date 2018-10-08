@@ -1,0 +1,10 @@
+<!--pages/orderList/orderList.wxml-->
+<view style='padding:30rpx;background:#F0F1F5;height:100vh'>
+  <navigator url='/pages/orderDetails/orderDetails' class='orderList flex-between' wx:for='{{oderList}}' wx:key='{{index}}'>
+    <text>{{item.text}}</text>
+    <view class='flex-between'>
+      <text style="color:{{item.isfahuo ? '#50CC99' : '#BCBCBC'}}">{{item.isfahuo ? '已发货' : '未发货'}}</text>
+      <image src='{{item.isfahuo ?oderImageRight1 :oderImageRight}}' class='iconimage'></image>
+    </view>
+  </navigator>
+</view>

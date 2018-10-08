@@ -1,0 +1,40 @@
+{
+  "pages": [
+        "pages/index/index",
+        "pages/maintain/maintain",
+
+    "pages/faultCar/faultCar",
+    "pages/lookingCar/lookingCar",
+    "pages/taskDetails/taskDetails",
+    "pages/myTask/myTask",
+    "pages/carDetails/carDetails",
+    "pages/carSudit/carSudit",
+    "pages/siteDetails/siteDetails",
+    "pages/siteSudit/siteSudit",
+    "pages/orderDetails/orderDetails",
+    "pages/orderList/orderList",
+    "pages/myInfor/myInfor",
+    "pages/order/order",
+    "pages/siteDel/siteDel",
+    "pages/siteModify/siteModify",
+    "pages/caroutin/caroutin",
+    "pages/siteAdd/siteAdd",
+    "pages/carOutView/carOutView",
+    "pages/carOut/carOut",
+
+    "pages/maintainIng/maintainIng",
+    "pages/maintainRecord/maintainRecord",
+    "pages/carseek/carseek",
+    "pages/carParts/carParts",
+    "pages/address/address",
+    "pages/login/login",
+    "pages/loginYan/loginYan",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,36 @@
+<!--pages/maintainIng/maintainIng.wxml-->
+<view style='padding:0 30rpx'>
+<form bindsubmit="formSubmit">
+<view class='title'>选择车辆维护位置</view>
+<view  style="height:360rpx">
+<checkbox-group class="repair-box" bindchange="checkboxChange">
+<view class='repair-left'>
+<view class="repair-check"><label><checkbox value='1'>把套</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='2'>刹把</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='3'>后拔链器</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='4'>右变速手柄</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='5'>变速线管</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='6'>鞍管快拆螺丝</checkbox></label></view>
+</view>
+
+<view class='repair-right'>
+<view class="repair-check"><label><checkbox value='7'>停车架</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='8'>链条</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='9'>脚踏</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='10'>前刹车器</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='11'>后刹车器</checkbox></label></view>
+<view class="repair-check"><label><checkbox value='12'>鞍座</checkbox></label></view>
+</view>
+</checkbox-group>
+</view>
+<view style='margin:30rpx 0'>
+<view style='margin:20rpx 0;font-size:32rpx'>备注内容</view>
+<textarea placeholder="最多输入100字" bindinput='inuputFun' class="search-textarea" maxlength="100" placeholder-style="font-size:13px;color:#bebebe"><text class='length-style'>{{length}}/100</text></textarea>
+</view>
+<view class='buttonBox'>
+<button style='background:#343E4A;color:#fff;width:300rpx' form-type='submit' hover-class="btn-hover" data-index='1'>搁置车辆</button>
+<button style='background:#343E4A;color:#fff;width:300rpx' form-type='submit' hover-class="btn-hover" data-index='2'>维护完成</button>
+</view>
+</form>
+</view>
+

@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+.bannerStyle {
+  width: 100%;
+  height: 304rpx;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.danbox {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.iconimage {
+  width: 112rpx;
+  height: 112rpx;
+}
+
+.dioe{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  background: red;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 16rpx;
+  color: #fff;
+  position: absolute;
+  top:0;
+  right: 0
+}

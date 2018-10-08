@@ -1,0 +1,15 @@
+/* pages/carOut/carOut.wxss */
+
+.caroutview {
+  padding: 20rpx;
+  background: #2ec7a9;
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 14rpx;
+  margin-bottom: 30rpx;
+}
+
+.iconimage {
+  width: 48rpx;
+  height: 48rpx;
+}

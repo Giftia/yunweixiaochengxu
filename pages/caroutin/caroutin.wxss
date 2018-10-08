@@ -1,0 +1,54 @@
+/* pages/caroutin/caroutin.wxss */
+
+.iconimageview {
+  flex: 1;
+  border: 1px #adadad solid;
+  border-radius: 8rpx;
+  padding: 8rpx;
+}
+
+.iconimage {
+  width: 42rpx;
+  height: 42rpx;
+  margin-left: 20rpx;
+}
+
+.iconimage-car {
+  width: 113rpx;
+  height: 85rpx;
+}
+
+.table {
+  width: 100%;
+  background: #fff;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th, .td {
+  font-size: 30rpx;
+  padding: 20rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.th {
+  font-weight: bolder;
+}
+
+.td {
+  color: #aeaeae;
+}
+
+.buttonBox {
+  display: -webkit-flex;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background: #fff;
+}

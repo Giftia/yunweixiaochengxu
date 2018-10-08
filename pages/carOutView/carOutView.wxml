@@ -1,0 +1,111 @@
+<!--pages/carOutView/carOutView.wxml-->
+<view style='padding:30rpx 30rpx'>
+  <form bindsubmit='formSubmit'>
+    <view class="page-body" style='margin-bottom:30rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px;font-size:34rpx;'>选合作商</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>杭州市西湖区</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="page-body" style='margin-bottom:30rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px;font-size:34rpx;'>选择景区</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>{{array[index]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="page-body" style='margin-bottom:30rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px;font-size:34rpx;'>选择车型</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChangeCars" value="{{ind}}" range="{{carsarray}}">
+                <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>{{carsarray[ind]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class='flex-between' style='font-size:34rpx;margin-bottom:30rpx'>
+      <view>出入选择</view>
+      <view class='flex-between' style='font-size:30rpx;color:#B5B5B5' wx:for="{{narber}}" wx:key="{{index}}" data-index='{{index}}' bindtap='narberfun'>
+        <view class="yuan-icon {{narberindex == index ? 'active' : ''}}"></view>
+        <view class="{{narberindex == index ? 'activev' : ''}}">{{item}}</view>
+      </view>
+    </view>
+    <button style='background:#343E4A;color:#fff;width:85%' form-type='submit'>点击扫车</button>
+    <view class='flex-between' style='margin:30rpx 0'>
+      <view class='flex-between'>
+        <image src='../image/noweihu-icon.png' class='iconimage'></image>
+        <view class='flex-column' style='font-size:28rpx'>
+          <text>车辆总数</text>
+          <text style='font-size:26rpx;color:#B9B9B9'>{{listData.length}}辆</text>
+        </view>
+      </view>
+      <view style='width:1px;height:80rpx;background:#B9B9B9'></view>
+      <view class='flex-between'>
+        <image src='../image/yiweihu-icon.png' class='iconimage'></image>
+        <view class='flex-column' style='font-size:28rpx'>
+          <text>可用车数</text>
+          <text style='font-size:26rpx;color:#B9B9B9'>3辆</text>
+        </view>
+      </view>
+      <view style='width:1px;height:80rpx;background:#B9B9B9'></view>
+      <view class='flex-between'>
+        <image src='../image/yesweuhu-icon.png' class='iconimage'></image>
+        <view class='flex-column' style='font-size:28rpx'>
+          <text>报故车数</text>
+          <text style='font-size:26rpx;color:#B9B9B9'>3辆</text>
+        </view>
+      </view>
+    </view>
+
+    <scroll-view scroll-y='true' style='height:440rpx' class="table">
+      <view class="tr">
+        <view class="th">车辆编号</view>
+        <view class="th">车辆状态</view>
+        <view class="th">维护状态</view>
+        <view class="th">操作</view>
+      </view>
+      <view class="tr" wx:for="{{listData}}" wx:key="{{index}}">
+        <view class="td">{{item.code}}</view>
+        <view class="td">{{item.text}}</view>
+        <view class="td">{{item.type}}</view>
+        <view class="td" bindtap='goDel' data-index='{{index}}'>{{item.caozuo}}</view>
+      </view>
+    </scroll-view>
+
+    <view class='buttonBox'>
+      <button style='background:#343E4A;color:#fff;width:85%' form-type='submit'>操作确认</button>
+    </view>
+
+
+  </form>
+</view>

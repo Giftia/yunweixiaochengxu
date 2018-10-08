@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view>
+  <image src='../image/banner.png' class='bannerStyle'></image>
+  <view style='width:100%;height:34rpx;background:#F0F1F5'></view>
+  <view style='padding:50rpx 0' class='box'>
+    <navigator url="/pages/maintain/maintain" class='danbox'>
+      <view style='position: relative'>
+        <image src='../image/car-weihu.png' class='iconimage'></image>
+        <view class='dioe'>{{reCount}}</view>
+      </view>
+      <text style='font-size:14px'>车辆维护</text>
+    </navigator>
+    <navigator url="/pages/carOut/carOut" class='danbox'>
+      <image src='../image/car-churu.png' class='iconimage'></image>
+      <text style='font-size:14px'>车辆出入</text>
+    </navigator>
+    <navigator url="/pages/carParts/carParts" class='danbox'>
+      <image src='../image/car-shenqing.png' class='iconimage'></image>
+      <text style='font-size:14px'>车件申请</text>
+    </navigator>
+    <navigator url="/pages/siteAdd/siteAdd" class='danbox'>
+      <image src='../image/jianli.png' class='iconimage'></image>
+      <text style='font-size:14px'>站点建立</text>
+    </navigator>
+    <navigator url="/pages/siteDel/siteDel" class='danbox'>
+      <image src='../image/shanchu.png' class='iconimage'></image>
+      <text style='font-size:14px'>站点删除</text>
+    </navigator>
+    <navigator url="/pages/siteModify/siteModify" class='danbox'>
+      <image src='../image/xinbiao.png' class='iconimage'></image>
+      <text style='font-size:14px'>信标修改</text>
+    </navigator>
+    <navigator url="/pages/myInfor/myInfor" class='danbox'>
+      <view style='position: relative'>
+        <image src='../image/xinxi.png' class='iconimage'></image>
+        <view class='dioe'>{{msgCount}}</view>
+      </view>
+      <text style='font-size:14px'>我的信息</text>
+    </navigator>
+    <navigator url="/pages/lookingCar/lookingCar" class='danbox'>
+      <view style='position: relative'>
+        <image src='../image/zhaoche.png' class='iconimage'></image>
+        <view class='dioe'>{{findCount}}</view>
+      </view>
+      <text style='font-size:14px'>找车任务</text>
+    </navigator>
+    <navigator url="/pages/faultCar/faultCar" class='danbox'>
+      <view style='position: relative'>
+        <image src='../image/guzhang.png' class='iconimage'></image>
+        <view class='dioe'>{{fbCount}}</view>
+      </view>
+      <text style='font-size:14px'>故障车辆</text>
+    </navigator>
+  </view>
+</view>

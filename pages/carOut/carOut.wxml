@@ -1,0 +1,11 @@
+<!--pages/carOut/carOut.wxml-->
+<view style='padding:30rpx'>
+  <view class='caroutview flex-between' bindtap='gocarout'>
+    <text>车辆出入景区</text>
+    <image src='../image/arrow-fff.png' class='iconimage'></image>
+  </view>
+  <view class='caroutview flex-between' style='background:#70C4E0' bindtap='gocaroutin'>
+    <text>车辆入库</text>
+    <image src='../image/arrow-fff.png' class='iconimage'></image>
+  </view>
+</view>

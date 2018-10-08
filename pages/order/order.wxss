@@ -1,0 +1,51 @@
+F/* pages/order/order.wxss */
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowsbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80rpx;
+}
+
+.namexin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #a2a2a2;
+  margin-bottom: 40rpx;
+}
+
+.namexinxi {
+  display: flex;
+  align-items: center;
+}
+
+.dingzhistyle {
+  display: flex;
+  align-items: flex-start;
+}
+.dingdan-style{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx
+}
+.buttonBox{
+  display:-webkit-flex;
+position:absolute;
+left:0;
+bottom:20px;
+width:100%;
+background:#fff;
+}
+.icon-bei{
+  width: 30rpx;
+  height: 30rpx
+}

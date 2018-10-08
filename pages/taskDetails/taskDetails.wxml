@@ -1,0 +1,7 @@
+<!--pages/taskDetails/taskDetails.wxml-->
+<view style='padding:30rpx'>
+  <text style='font-size:30rpx;color:#A2A2A2'>哈哈的哈哈十大</text>
+</view>
+<view class='buttonBox'>
+  <button style='background:#343E4A;color:#fff;width:85%' bindtap='gomyTask'>完成</button>
+</view>

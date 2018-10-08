@@ -1,0 +1,18 @@
+/* pages/carseek/carseek.wxss */
+
+.topinputview {
+  height: 10vh;
+}
+
+input {
+  border: 1px #c3c3c3 solid;
+  border-radius: 12rpx;
+  width: 540rpx;
+  padding-left: 10rpx;
+  font-size: 24rpx;
+}
+
+.iconimage {
+  width: 52rpx;
+  height: 52rpx;
+}

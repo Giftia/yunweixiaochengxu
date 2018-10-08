@@ -1,0 +1,10 @@
+/* pages/taskDetails/taskDetails.wxss */
+
+.buttonBox {
+  display: -webkit-flex;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background: #fff;
+}

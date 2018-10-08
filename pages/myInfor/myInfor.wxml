@@ -1,0 +1,31 @@
+<!--pages/myInfor/myInfor.wxml-->
+<view class='flex-between-wrap' style='padding:30rpx;'>
+  <navigator url='/pages/orderList/orderList' class='myInforStyle myInforStyleone flex-column-center'>
+  <view style='position: relative'>
+      <image src='../image/icon01.png' class='iconimage'></image>
+      <text class='dioe'>{{orderMsgCount}}</text>
+  </view>
+    <text>订单发货通知</text>
+  </navigator>
+  <navigator url='/pages/siteSudit/siteSudit' class='myInforStyle myInforStyletwo flex-column-center'>
+    <view style='position: relative'>
+      <image src='../image/icon02.png' class='iconimage'></image>
+      <text class='dioe'>{{siteMsgCount}}</text>
+  </view>
+    <text>站点建立审核</text>
+  </navigator>
+  <navigator url='/pages/carSudit/carSudit' class='myInforStyle myInforStyletwo flex-column-center'>
+    <view style='position: relative'>
+      <image src='../image/icon03.png' class='iconimage'></image>
+      <text class='dioe'>{{servingMsgCount}}</text>
+  </view>
+    <text>车辆出入审核</text>
+  </navigator>
+  <navigator url='/pages/myTask/myTask' class='myInforStyle myInforStyleone flex-column-center'>
+    <view style='position: relative'>
+      <image src='../image/icon04.png' class='iconimage'></image>
+      <text class='dioe'>{{msgCount}}</text>
+  </view>
+    <text>我的任务</text>
+  </navigator>
+</view>

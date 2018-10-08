@@ -1,0 +1,17 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<view style='padding:30rpx 0;background:#F0F1F5;height:100vh'>
+  <view class='flex-column' style='padding:30rpx;background:#FFF;'>
+    <view class='flex-between' style='font-size:32rpx;color:#A1A1A1;margin-bottom:26rpx'>
+      <view>发货时间</view>
+      <view>123</view>
+    </view>
+    <view class='flex-between' style='font-size:32rpx;color:#A1A1A1;margin-bottom:26rpx'>
+      <view>物流单号</view>
+      <view>123</view>
+    </view>
+    <view class='flex-between' style='font-size:32rpx;color:#A1A1A1;margin-bottom:26rpx'>
+      <view>物品</view>
+      <view>123</view>
+    </view>
+  </view>
+</view>

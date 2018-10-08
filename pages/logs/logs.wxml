@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item" >{{index + 1}}. {{log}}</text><text data-index='{{index}}' bindtap='sves'>x</text>
+  </block>
+      <block wx:for="{{lists}}" wx:key="{{index}}">
+      <input class='create-li' data-id="{{index}}" placeholder="选项"  bindinput='bindKeyInput'></input>
+      <view>13</view>
+    </block>
+  <text bindtap='addList'>添加</text>
+</view>

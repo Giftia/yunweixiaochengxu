@@ -1,0 +1,85 @@
+<!--pages/carParts/carParts.wxml-->
+<view style='padding:30rpx 30rpx'>
+  <form bindsubmit='formSubmit'>
+    <view class="page-body" style='margin-bottom:30rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px'>选合作商</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>杭州市西湖区</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="page-body" style='margin-bottom:30rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px'>选择景区</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>{{array[index]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="page-body" style='margin-bottom:58rpx'>
+      <view class="page-section">
+        <view class="weui-cells1 weui-cells_after-title">
+          <view class="weui-cell weui-cell_input" style='padding:0'>
+            <view class="weui-cell__hd">
+              <view class="weui-label" style='width:88px'>选择车型</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChangeCars" value="{{ind}}" range="{{carsarray}}">
+                <view class="weui-input" style='border:1px #ccc solid;border-radius:6px;height:52rpx;min-height:52rpx;line-height:52rpx;font-size:28rpx;padding: 0 20rpx;'>{{carsarray[ind]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view style='height:330px'>
+      <scroll-view scroll-y="true" style='height:330px'>
+
+        <view class='carstyleBox' wx:for="{{carrsList}}" wx:key="id">
+          <input placeholder='请添加' value='{{item.name}}' disabled="{{item.isdisabled}}" bindinput='bindkeyinput' data-userId="{{item.id}}"></input>
+          <view class='carstyleBox'>
+            <view style='width:30px;text-align: center;' bindtap="tapDelCart" data-id="{{item.id}}">-</view>
+            <view class='carsnum'>{{item.num}}</view>
+            <view style='width:30px;text-align: center;' bindtap="tapAddCart" data-id="{{item.id}}">+</view>
+          </view>
+        </view>
+
+        <view class='carstyleBox' bindtap='addList' style='color:#A5A5A5'>
+          <view>添加</view>
+          <view class='carstyleBox'>
+            <view style='width:30px;text-align: center;'>>></view>
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+
+
+    <view class='buttonBox'>
+      <button style='background:#343E4A;color:#fff;width:85%' form-type='submit'>立即申请</button>
+    </view>
+
+
+  </form>
+</view>

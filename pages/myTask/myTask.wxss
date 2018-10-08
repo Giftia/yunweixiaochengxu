@@ -1,0 +1,16 @@
+/* pages/myTask/myTask.wxss */
+
+.orderList {
+  padding: 26rpx 10rpx;
+  font-size: 32rpx;
+  background: #fff;
+  box-shadow: 0 2rpx 5rpx 0 #cbcbcb;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.iconimage {
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 10rpx;
+}

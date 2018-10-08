@@ -1,0 +1,31 @@
+/* pages/siteDel/siteDel.wxss */
+@import "../common/lib/weui.wxss";
+.table {
+  width: 100%;
+  background: #fff;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th, .td {
+  font-size: 30rpx;
+  padding: 20rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.th {
+  font-weight: bolder;
+}
+
+.td {
+  color: #aeaeae;
+}
+.iconimage-sao {
+  width: 51rpx;
+  height: 51rpx;
+}

@@ -1,0 +1,50 @@
+<!--pages/caroutin/caroutin.wxml-->
+<view class='flex-between' style='font-size:32rpx;padding:20rpx;margin-top:20rpx'>
+  <view style='margin-right:15px'>车辆批次</view>
+  <view class='iconimageview flex-end'>{{carsNumb}}
+    <image src='../image/shuaxin.png' class='iconimage' animation="{{animation}}" bindtap="rotate"></image>
+  </view>
+</view>
+<view class='flex-between' style='font-size:32rpx;padding:20rpx;'>
+  <view style='margin-right:15px'>车辆编号</view>
+  <view class='iconimageview flex-end'>{{carsCode}}
+    <image src='../image/saoyisao.png' class='iconimage' bindtap='wxScanCode'></image>
+  </view>
+</view>
+<view class='flex-between' style='font-size:32rpx;padding:20rpx;'>
+  <view style='margin-right:15px'>车锁编号</view>
+  <view class='iconimageview flex-end'>{{carsSuoCode}}
+    <image src='../image/saoyisao.png' class='iconimage' bindtap='wxScanCode'></image>
+  </view>
+</view>
+
+<view style='margin-top:10px;'>
+  <button style='background:#343E4A;color:#fff;width:85%' bindtap='caradd'>点击绑定</button>
+</view>
+
+<view class='flex-between' style='padding:30rpx'>
+  <view class='flex-between' style='font-size:32rpx'>
+    <image src='../image/noweihu-icon.png' class='iconimage-car'></image>
+    <text>车辆总数</text>
+  </view>
+  <text style='font-size:30rpx;color:#B9B9B9'>{{carLength}}辆</text>
+</view>
+
+<scroll-view scroll-y='true' style='height:440rpx' class="table">
+  <view class="tr">
+    <view class="th">车辆批次</view>
+    <view class="th">车辆编号</view>
+    <view class="th">车辆状态</view>
+    <view class="th">操作</view>
+  </view>
+  <view class="tr" wx:for="{{listData}}" wx:key="{{index}}">
+    <view class="td">{{item.code}}</view>
+    <view class="td">{{item.text}}</view>
+    <view class="td">{{item.type}}</view>
+    <view class="td" bindtap='goDel' data-index='{{index}}'>{{item.caozuo}}</view>
+  </view>
+</scroll-view>
+
+<view class='buttonBox'>
+  <button style='background:#343E4A;color:#fff;width:85%' form-type='submit'>确认入库</button>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/maintain/maintain.wxml-->
+<view class='pagesview'>
+  <view class='topview-style flex-between'>
+    <view style='font-size:30rpx'>维护重置</view>
+    <view style='font-size:30rpx;color:#AEAEAE' bindtap='gomaintainRecord'>维护记录</view>
+  </view>
+
+  <view class='maintopview flex-between'>
+    <view class='flex-column-center'>
+      <image src='../image/noweihu-icon.png' class='iconimage'></image>
+      <text style='font-size:30rpx'>未维护</text>
+      <text style='font-size:28rpx;color:#AEAEAE'>110辆</text>
+    </view>
+    <view class='flex-column-center'>
+      <image src='../image/yiweihu-icon.png' class='iconimage'></image>
+      <text style='font-size:30rpx'>已维护</text>
+      <text style='font-size:28rpx;color:#AEAEAE'>110辆</text>
+    </view>
+    <view class='flex-column-center'>
+      <image src='../image/yesweuhu-icon.png' class='iconimage'></image>
+      <text style='font-size:30rpx'>维护中</text>
+      <text style='font-size:28rpx;color:#AEAEAE'>110辆</text>
+    </view>
+  </view>
+  <scroll-view scroll-y='true' style='height:300px' class="table">
+    <view class="tr">
+      <view class="th">车辆编号</view>
+      <view class="th">车辆状态</view>
+      <view class="th">维护状态</view>
+      <view class="th">操作</view>
+    </view>
+    <view class="tr" wx:for="{{listData}}">
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+      <view class="td" bindtap='gocarseek'>{{item.caozuo}}</view>
+    </view>
+  </scroll-view>
+
+  <view class='buttonBox flex-center' bindtap='goUnlockweihu'>
+    <view class='buttonBoxson flex-center'>
+      <image src='../image/saoyis.png' class='iconimage'></image>扫一扫</view>
+  </view>
+
+</view>
